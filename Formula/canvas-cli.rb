@@ -5,21 +5,21 @@
 class CanvasCli < Formula
   desc "A powerful command-line interface for Canvas LMS"
   homepage "https://github.com/jjuanrivvera/canvas-cli"
-  version "1.6.1"
+  version "1.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jjuanrivvera/canvas-cli/releases/download/v1.6.1/canvas-cli_darwin_x86_64.tar.gz"
-      sha256 "a9fecce555e79ac49a1a8e400517ad798f78197ee2961a33ef78459639e9db6f"
+      url "https://github.com/jjuanrivvera/canvas-cli/releases/download/v1.7.0/canvas-cli_darwin_x86_64.tar.gz"
+      sha256 "aedf338b1b9bde18f446fdc9aaae07b1d646d3247b794332055f020b8c33b531"
 
       def install
         bin.install "canvas"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jjuanrivvera/canvas-cli/releases/download/v1.6.1/canvas-cli_darwin_arm64.tar.gz"
-      sha256 "2f8ba4ebc87039e3bd2d51d345246eb62fd6d16a2462dfae289ddc29f8a16a76"
+      url "https://github.com/jjuanrivvera/canvas-cli/releases/download/v1.7.0/canvas-cli_darwin_arm64.tar.gz"
+      sha256 "5df1d487d0d6b1f474133b305947e96acd58edf7b379275e267225415589b941"
 
       def install
         bin.install "canvas"
@@ -29,15 +29,15 @@ class CanvasCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jjuanrivvera/canvas-cli/releases/download/v1.6.1/canvas-cli_linux_x86_64.tar.gz"
-      sha256 "4de43f736c0b5263ce3d8657f91b89326bc40f3bbf680f3816ad26689184bd96"
+      url "https://github.com/jjuanrivvera/canvas-cli/releases/download/v1.7.0/canvas-cli_linux_x86_64.tar.gz"
+      sha256 "cb30970594bde2cd41022e09a4d497947929ec28f7d6b4888ef2c6dd7def1e87"
       def install
         bin.install "canvas"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jjuanrivvera/canvas-cli/releases/download/v1.6.1/canvas-cli_linux_arm64.tar.gz"
-      sha256 "0f3f9a215782309dd3fc2a085d8addf0d151dfc9ca9b3cfe668bf50deb36cb30"
+      url "https://github.com/jjuanrivvera/canvas-cli/releases/download/v1.7.0/canvas-cli_linux_arm64.tar.gz"
+      sha256 "827f5fad773147e69f069dc2a14b3c0c8d0121f929e6dfbe5b6ae7f54f7002bc"
       def install
         bin.install "canvas"
       end
