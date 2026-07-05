@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+# GoReleaser-generated formula/manifest repo — the contents are produced by release automation,
+# so there is nothing here that benefits from AI review.
+reviews:
+  auto_review:
+    enabled: false
